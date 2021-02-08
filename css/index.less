@@ -1,0 +1,117 @@
+.publisher {
+    display: flex;
+    justify-content: center;
+    padding: 6vw 0;
+
+    .publisher_img {
+        width: 70vw;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+
+    .title_img {
+        width: 80vw;
+    }
+}
+
+.main_content {
+    position: relative;
+    bottom: 60vw;
+
+    .main_img {
+        img {
+            width: 100vw;
+        }
+    }
+
+    .first_meet {
+        position: absolute;
+        top: 100vw;
+        left: 14vw;
+
+        .first_ananas {
+            position: relative;
+
+            .first_ananas_body {
+                position: absolute;
+                width: 28vw;
+                z-index: 1;
+            }
+
+            .first_ananas_left_hand,
+            .first_ananas_right_hand {
+                position: absolute;
+                width: 8vw;
+
+            }
+
+            .first_ananas_left_hand {
+                top: 20vw;
+                left: -2vw;
+                transform-origin: 2vw 20vw;
+                animation: leftHand_move 2s linear alternate infinite;
+
+            }
+
+            .first_ananas_right_hand {
+                top: 36vw;
+                left: 20vw;
+                z-index: 2;
+                transform-origin: 0 0;
+                animation: rightHand_move 2s linear alternate infinite;
+            }
+        }
+
+        .first_chat {
+            position: relative;
+            bottom: 46vw;
+            left: -10vw;
+            display: flex;
+            width: 100vw;
+
+            .first_chat_left {
+                flex: 1;
+                display: none;
+                margin-top: 10vw;
+
+                img {
+                    width: 50vw;
+                }
+            }
+
+            .first_chat_right {
+                margin-top: 22vw;
+                margin-right: 10vw;
+                display: none;
+
+                img {
+                    width: 42vw;
+                }
+            }
+        }
+    }
+
+
+    .second_meet {
+        position: absolute;
+        top: 200vw;
+
+
+    }
+}
+
+@keyframes leftHand_move {
+    from {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes rightHand_move {
+    from {
+        transform: rotate(15deg);
+    }
+}

@@ -1,0 +1,91 @@
+.publisher {
+  display: flex;
+  justify-content: center;
+  padding: 6vw 0;
+}
+.publisher .publisher_img {
+  width: 70vw;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vw;
+}
+.title .title_img {
+  width: 80vw;
+}
+.main_content {
+  position: relative;
+  bottom: 60vw;
+}
+.main_content .main_img img {
+  width: 100vw;
+}
+.main_content .first_meet {
+  position: absolute;
+  top: 100vw;
+  left: 14vw;
+}
+.main_content .first_meet .first_ananas {
+  position: relative;
+}
+.main_content .first_meet .first_ananas .first_ananas_body {
+  position: absolute;
+  width: 28vw;
+  z-index: 1;
+}
+.main_content .first_meet .first_ananas .first_ananas_left_hand,
+.main_content .first_meet .first_ananas .first_ananas_right_hand {
+  position: absolute;
+  width: 8vw;
+}
+.main_content .first_meet .first_ananas .first_ananas_left_hand {
+  top: 20vw;
+  left: -2vw;
+  transform-origin: 2vw 20vw;
+  animation: leftHand_move 2s linear alternate infinite;
+}
+.main_content .first_meet .first_ananas .first_ananas_right_hand {
+  top: 36vw;
+  left: 20vw;
+  z-index: 2;
+  transform-origin: 0 0;
+  animation: rightHand_move 2s linear alternate infinite;
+}
+.main_content .first_meet .first_chat {
+  position: relative;
+  bottom: 46vw;
+  left: -10vw;
+  display: flex;
+  width: 100vw;
+}
+.main_content .first_meet .first_chat .first_chat_left {
+  flex: 1;
+  display: none;
+  margin-top: 10vw;
+}
+.main_content .first_meet .first_chat .first_chat_left img {
+  width: 50vw;
+}
+.main_content .first_meet .first_chat .first_chat_right {
+  margin-top: 22vw;
+  margin-right: 10vw;
+  display: none;
+}
+.main_content .first_meet .first_chat .first_chat_right img {
+  width: 42vw;
+}
+.main_content .second_meet {
+  position: absolute;
+  top: 200vw;
+}
+@keyframes leftHand_move {
+  from {
+    transform: rotate(15deg);
+  }
+}
+@keyframes rightHand_move {
+  from {
+    transform: rotate(15deg);
+  }
+}
